@@ -95,6 +95,10 @@ a:hover{color:inherit}
 .dr{animation:draw 7s ease-in-out infinite}
 .rg{animation:ring 7s ease-in-out infinite}
 .dn{transform-origin:left;animation:drain var(--dur,9s) ease-in-out infinite,warn var(--dur,9s) infinite}
+.gal{scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+.gal::-webkit-scrollbar{height:8px}
+.gal::-webkit-scrollbar-thumb{background:var(--line);border-radius:8px}
+.gal:focus-visible{outline:2px solid var(--ac);outline-offset:6px;border-radius:12px}
 .card{transition:transform .25s ease,border-color .25s ease}
 .card:hover{transform:translateY(-6px);border-color:var(--ac)}
 .chip{transition:background-color .2s,color .2s,border-color .2s}
@@ -124,7 +128,7 @@ a:focus-visible{outline:2px solid var(--ac);outline-offset:3px;border-radius:8px
 </a>
 <nav aria-label="Sections" style="display: flex; flex-wrap: wrap; align-items: center; gap: 0 22px; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 14px">
 <a class="nl" href="#roles" style="padding: 11px 0; text-decoration: none; color: var(--muted)">Roles</a>
-<a class="nl" href="#work" style="padding: 11px 0; text-decoration: none; color: var(--muted)">Work</a>
+<a class="nl" href="#live" style="padding: 11px 0; text-decoration: none; color: var(--muted)">Work</a>
 <a class="nl" href="#experience" style="padding: 11px 0; text-decoration: none; color: var(--muted)">Experience</a>
 <a class="nl" href="#skills" style="padding: 11px 0; text-decoration: none; color: var(--muted)">Skills</a>
 <a class="nl" href="#contact" style="padding: 11px 0; text-decoration: none; color: var(--muted)">Contact</a>
@@ -143,7 +147,7 @@ a:focus-visible{outline:2px solid var(--ac);outline-offset:3px;border-radius:8px
 <p class="rv" style="animation-delay: .6s; margin: 0; max-width: 600px; font-size: 19px; color: var(--muted)">MIS and AI automation specialist with 8+ years of experience. I turn everyday business work (sales, purchase, stock and payments) into automatic reports, live dashboards and AI assistants that teams actually use.</p>
 <div class="rv" style="animation-delay: .75s; display: flex; flex-wrap: wrap; gap: 12px; margin-top: 6px">
 <a class="btn" href="mailto:otheruse228@gmail.com" style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; box-sizing: border-box; padding: 0 26px; border-radius: 999px; background: var(--ac); color: var(--onAc); text-decoration: none; font-weight: 700; font-size: 17px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>Email me</a>
-<a class="btn" href="#work" style="display: inline-flex; align-items: center; gap: 8px; min-height: 52px; box-sizing: border-box; padding: 0 10px; color: var(--ink); text-decoration: none; font-weight: 600; font-size: 17px">See my work<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg></a>
+<a class="btn" href="#live" style="display: inline-flex; align-items: center; gap: 8px; min-height: 52px; box-sizing: border-box; padding: 0 10px; color: var(--ink); text-decoration: none; font-weight: 600; font-size: 17px">See my work<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg></a>
 </div>
 </div>
 
@@ -317,9 +321,100 @@ a:focus-visible{outline:2px solid var(--ac);outline-offset:3px;border-radius:8px
 </div>
 </section>
 
+<section id="live" aria-labelledby="h-live" style="padding: 128px 0 0">
+<div class="sv" style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px 40px">
+<div style="display: flex; flex-direction: column; gap: 14px; max-width: 780px">
+<p style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: .16em; color: var(--acInk)">02 / IN PRODUCTION</p>
+<h2 id="h-live" style="margin: 0; font-size: clamp(36px, 5.4vw, 66px); font-weight: 800; line-height: 1.02; letter-spacing: -.03em; text-wrap: balance">Real bots, running every day.</h2>
+<p style="margin: 0; font-size: 19px; color: var(--muted)">Real screenshots from WhatsApp and Telegram bots I built and run at work. Names, phone numbers and client details are blurred.</p>
+</div>
+<p style="margin: 0; display: flex; align-items: center; gap: 8px; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: .1em; color: var(--muted)">SCROLL SIDEWAYS<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></p>
+</div>
+<div class="gal sv" role="region" aria-label="Screenshots of real bots" tabindex="0" style="display: flex; gap: 22px; overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-x: contain; margin-top: 40px; padding: 4px 2px 18px">
+
+<figure style="flex: 0 0 min(360px, 86%); margin: 0; scroll-snap-align: start; display: flex; flex-direction: column; gap: 16px">
+<figcaption style="display: flex; flex-direction: column; gap: 6px; min-height: 172px">
+<span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: .1em; color: var(--acInk)">WHATSAPP</span>
+<span style="font-size: 20px; font-weight: 700; line-height: 1.25">Voice note to complaint ticket</span>
+<span style="font-size: 15px; line-height: 1.5; color: var(--muted)">A technician sends a voice note. The bot transcribes it, splits it into separate complaints, tags each with a category and urgency, and logs it.</span>
+</figcaption>
+<div style="border: 1px solid var(--line); border-radius: 22px; overflow: hidden; background: #0B141A">
+<img src="img/real/complaint.webp" alt="WhatsApp group: the bot turns a technician's voice note into two complaint tickets for one generator, tagged Engine and Electrical, both urgent. Names and numbers blurred." width="720" height="1118" loading="lazy" style="display: block; width: 100%; height: auto">
+</div>
+</figure>
+
+<figure style="flex: 0 0 min(360px, 86%); margin: 0; scroll-snap-align: start; display: flex; flex-direction: column; gap: 16px">
+<figcaption style="display: flex; flex-direction: column; gap: 6px; min-height: 172px">
+<span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: .1em; color: var(--acInk)">WHATSAPP</span>
+<span style="font-size: 20px; font-weight: 700; line-height: 1.25">One-tap rate approval</span>
+<span style="font-size: 15px; line-height: 1.5; color: var(--muted)">The bot compares vendor quotes, marks the cheaper one, and the manager approves with one tap or a short reply.</span>
+</figcaption>
+<div style="border: 1px solid var(--line); border-radius: 22px; overflow: hidden; background: #0B141A">
+<img src="img/real/rate.webp" alt="WhatsApp: a rate approval request comparing two vendor quotes, with the cheaper one ticked and approved in one reply. Vendor names blurred." width="720" height="913" loading="lazy" style="display: block; width: 100%; height: auto">
+</div>
+</figure>
+
+<figure style="flex: 0 0 min(360px, 86%); margin: 0; scroll-snap-align: start; display: flex; flex-direction: column; gap: 16px">
+<figcaption style="display: flex; flex-direction: column; gap: 6px; min-height: 172px">
+<span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: .1em; color: var(--acInk)">WHATSAPP</span>
+<span style="font-size: 20px; font-weight: 700; line-height: 1.25">Ask in plain words</span>
+<span style="font-size: 15px; line-height: 1.5; color: var(--muted)">A question like “how many FMS steps are pending today?” gets an instant answer from the live sheet.</span>
+</figcaption>
+<div style="border: 1px solid var(--line); border-radius: 22px; overflow: hidden; background: #0B141A">
+<img src="img/real/fms.webp" alt="WhatsApp: asked how many FMS steps are pending today, the bot replies that all 11 steps are done and lists them." width="720" height="945" loading="lazy" style="display: block; width: 100%; height: auto">
+</div>
+</figure>
+
+<figure style="flex: 0 0 min(360px, 86%); margin: 0; scroll-snap-align: start; display: flex; flex-direction: column; gap: 16px">
+<figcaption style="display: flex; flex-direction: column; gap: 6px; min-height: 172px">
+<span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: .1em; color: var(--acInk)">WHATSAPP</span>
+<span style="font-size: 20px; font-weight: 700; line-height: 1.25">Evening low-stock alert</span>
+<span style="font-size: 15px; line-height: 1.5; color: var(--muted)">Every evening the bot lists the items that have fallen below minimum stock, with part numbers, so purchase happens on time.</span>
+</figcaption>
+<div style="border: 1px solid var(--line); border-radius: 22px; overflow: hidden; background: #0B141A">
+<img src="img/real/stock.webp" alt="WhatsApp evening reminder listing 11 items below minimum stock, each with part number, current stock and minimum required." width="720" height="1073" loading="lazy" style="display: block; width: 100%; height: auto">
+</div>
+</figure>
+
+<figure style="flex: 0 0 min(360px, 86%); margin: 0; scroll-snap-align: start; display: flex; flex-direction: column; gap: 16px">
+<figcaption style="display: flex; flex-direction: column; gap: 6px; min-height: 172px">
+<span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: .1em; color: var(--acInk)">TELEGRAM</span>
+<span style="font-size: 20px; font-weight: 700; line-height: 1.25">Payment follow-up tracker</span>
+<span style="font-size: 15px; line-height: 1.5; color: var(--muted)">Field staff type an update in plain words. The bot updates that client's payment status and the follow-up date.</span>
+</figcaption>
+<div style="border: 1px solid var(--line); border-radius: 22px; overflow: hidden; background: #0B141A">
+<img src="img/real/payment.webp" alt="Telegram group: staff post payment updates and the bot replies with the updated status, note, follow-up date and who updated it. Names blurred." width="720" height="1159" loading="lazy" style="display: block; width: 100%; height: auto">
+</div>
+</figure>
+
+<figure style="flex: 0 0 min(360px, 86%); margin: 0; scroll-snap-align: start; display: flex; flex-direction: column; gap: 16px">
+<figcaption style="display: flex; flex-direction: column; gap: 6px; min-height: 172px">
+<span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: .1em; color: var(--acInk)">TELEGRAM</span>
+<span style="font-size: 20px; font-weight: 700; line-height: 1.25">Route assignment with a name check</span>
+<span style="font-size: 15px; line-height: 1.5; color: var(--muted)">A typed route list is matched against the client master list. Names that do not match are flagged for manual assignment.</span>
+</figcaption>
+<div style="border: 1px solid var(--line); border-radius: 22px; overflow: hidden; background: #0B141A">
+<img src="img/real/route.webp" alt="Telegram: the bot assigns a route from a typed list of sites and flags the names it could not match. Names blurred." width="720" height="663" loading="lazy" style="display: block; width: 100%; height: auto">
+</div>
+</figure>
+
+<figure style="flex: 0 0 min(360px, 86%); margin: 0; scroll-snap-align: start; display: flex; flex-direction: column; gap: 16px">
+<figcaption style="display: flex; flex-direction: column; gap: 6px; min-height: 172px">
+<span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: .1em; color: var(--acInk)">WHATSAPP</span>
+<span style="font-size: 20px; font-weight: 700; line-height: 1.25">Tasks and reminders by chat</span>
+<span style="font-size: 15px; line-height: 1.5; color: var(--muted)">Mark a task as done or set a reminder for the boss in one message. The bot logs the time and sends the reminder later.</span>
+</figcaption>
+<div style="border: 1px solid var(--line); border-radius: 22px; overflow: hidden; background: #0B141A">
+<img src="img/real/reminder.webp" alt="WhatsApp: the bot logs a finished task and sets a 9 pm reminder for the manager to review the monthly dashboard. Names blurred." width="720" height="709" loading="lazy" style="display: block; width: 100%; height: auto">
+</div>
+</figure>
+
+</div>
+</section>
+
 <section id="work" aria-labelledby="h-work" style="padding: 128px 0 0">
 <div class="sv" style="display: flex; flex-direction: column; gap: 14px; max-width: 780px">
-<p style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: .16em; color: var(--acInk)">02 / SELECTED WORK</p>
+<p style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: .16em; color: var(--acInk)">03 / SELECTED WORK</p>
 <h2 id="h-work" style="margin: 0; font-size: clamp(36px, 5.4vw, 66px); font-weight: 800; line-height: 1.02; letter-spacing: -.03em; text-wrap: balance">Real systems, explained simply.</h2>
 <p style="margin: 0; font-size: 19px; color: var(--muted)">Each one replaced a manual job. The animated samples show how it works, no technical knowledge needed.</p>
 </div>
@@ -745,7 +840,7 @@ a:focus-visible{outline:2px solid var(--ac);outline-offset:3px;border-radius:8px
 
 <section aria-labelledby="h-more" style="padding: 128px 0 0">
 <div class="sv" style="display: flex; flex-direction: column; gap: 14px; max-width: 780px">
-<p style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: .16em; color: var(--acInk)">03 / MORE I HAVE BUILT</p>
+<p style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: .16em; color: var(--acInk)">04 / MORE I HAVE BUILT</p>
 <h2 id="h-more" style="margin: 0; font-size: clamp(36px, 5.4vw, 66px); font-weight: 800; line-height: 1.02; letter-spacing: -.03em; text-wrap: balance">And plenty more.</h2>
 <p style="margin: 0; font-size: 19px; color: var(--muted)">A few more from the 70+ systems and apps I have built, each made for a real need.</p>
 </div>
@@ -845,7 +940,7 @@ a:focus-visible{outline:2px solid var(--ac);outline-offset:3px;border-radius:8px
 
 <section id="experience" aria-labelledby="h-exp" style="padding: 128px 0 0">
 <div class="sv" style="display: flex; flex-direction: column; gap: 14px; max-width: 780px">
-<p style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: .16em; color: var(--acInk)">04 / EXPERIENCE</p>
+<p style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: .16em; color: var(--acInk)">05 / EXPERIENCE</p>
 <h2 id="h-exp" style="margin: 0; font-size: clamp(36px, 5.4vw, 66px); font-weight: 800; line-height: 1.02; letter-spacing: -.03em; text-wrap: balance">8+ years, four companies.</h2>
 <p style="margin: 0; font-size: 19px; color: var(--muted)">From e-commerce operations to running the complete MIS function.</p>
 </div>
@@ -925,7 +1020,7 @@ a:focus-visible{outline:2px solid var(--ac);outline-offset:3px;border-radius:8px
 
 <section id="skills" aria-labelledby="h-skills" style="padding: 128px 0 0">
 <div class="sv" style="display: flex; flex-direction: column; gap: 14px; max-width: 780px">
-<p style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: .16em; color: var(--acInk)">05 / SKILLS</p>
+<p style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: .16em; color: var(--acInk)">06 / SKILLS</p>
 <h2 id="h-skills" style="margin: 0; font-size: clamp(36px, 5.4vw, 66px); font-weight: 800; line-height: 1.02; letter-spacing: -.03em; text-wrap: balance">The toolkit behind the work.</h2>
 <p style="margin: 0; font-size: 19px; color: var(--muted)">Grouped by what each set of tools helps me do.</p>
 </div>
@@ -1041,7 +1136,7 @@ a:focus-visible{outline:2px solid var(--ac);outline-offset:3px;border-radius:8px
 
 <section aria-labelledby="h-why" style="padding: 128px 0 0">
 <div class="sv" style="display: flex; flex-direction: column; gap: 14px; max-width: 780px">
-<p style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: .16em; color: var(--acInk)">06 / WHY ME</p>
+<p style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: .16em; color: var(--acInk)">07 / WHY ME</p>
 <h2 id="h-why" style="margin: 0; font-size: clamp(36px, 5.4vw, 66px); font-weight: 800; line-height: 1.02; letter-spacing: -.03em; text-wrap: balance">Why teams hire me.</h2>
 </div>
 <div class="sv" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); gap: 28px; margin-top: 48px">
@@ -1067,7 +1162,7 @@ a:focus-visible{outline:2px solid var(--ac);outline-offset:3px;border-radius:8px
 <section aria-label="Education and strengths" style="padding: 128px 0 0">
 <div class="sv" style="display: flex; flex-wrap: wrap; gap: 48px 64px">
 <div style="flex: 1 1 420px; min-width: 0">
-<p style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: .16em; color: var(--acInk)">07 / EDUCATION</p>
+<p style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: .16em; color: var(--acInk)">08 / EDUCATION</p>
 <h2 style="margin: 14px 0 0; font-size: clamp(30px, 3.6vw, 44px); font-weight: 800; line-height: 1.1; letter-spacing: -.025em">Education</h2>
 <div style="display: flex; flex-direction: column; margin-top: 24px">
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; padding: 14px 0; border-top: 1px solid var(--line)"><span style="font-weight: 600">Bachelor of Arts (General)</span><span style="color: var(--muted)">IGNOU</span></div>
@@ -1076,7 +1171,7 @@ a:focus-visible{outline:2px solid var(--ac);outline-offset:3px;border-radius:8px
 </div>
 </div>
 <div style="flex: 1 1 420px; min-width: 0">
-<p style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: .16em; color: var(--acInk)">08 / STRENGTHS</p>
+<p style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: .16em; color: var(--acInk)">09 / STRENGTHS</p>
 <h2 style="margin: 14px 0 0; font-size: clamp(30px, 3.6vw, 44px); font-weight: 800; line-height: 1.1; letter-spacing: -.025em">How I work with people</h2>
 <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px">
 <span class="chip" style="border: 1px solid var(--line); border-radius: 999px; padding: 8px 16px; font-size: 16px; line-height: 1.3">Clear communication</span>
