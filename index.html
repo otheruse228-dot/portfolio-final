@@ -70,11 +70,11 @@ a:hover{color:inherit}
 .td span{animation:dots 1.2s infinite}
 .td span:nth-child(2){animation-delay:.15s}
 .td span:nth-child(3){animation-delay:.3s}
-.q1{animation:r1 var(--dur,12s) ease-out infinite both}
-.q2{animation:r2 var(--dur,12s) ease-out infinite both}
-.q3{animation:r3 var(--dur,12s) ease-out infinite both}
-.q4{animation:r4 var(--dur,12s) ease-out infinite both}
-.q5{animation:r5 var(--dur,12s) ease-out infinite both}
+.q1{animation:r1 var(--dur,12s) ease-out var(--off,0s) infinite both}
+.q2{animation:r2 var(--dur,12s) ease-out var(--off,0s) infinite both}
+.q3{animation:r3 var(--dur,12s) ease-out var(--off,0s) infinite both}
+.q4{animation:r4 var(--dur,12s) ease-out var(--off,0s) infinite both}
+.q5{animation:r5 var(--dur,12s) ease-out var(--off,0s) infinite both}
 .t2{animation:ty2 var(--dur,12s) infinite both}
 .t4{animation:ty4 var(--dur,12s) infinite both}
 .k1{animation:l1 var(--dur,10s) infinite both}
@@ -408,6 +408,86 @@ a:focus-visible{outline:2px solid var(--ac);outline-offset:3px;border-radius:8px
 <img src="img/real/reminder.webp" alt="WhatsApp: the bot logs a finished task and sets a 9 pm reminder for the manager to review the monthly dashboard. Names blurred." width="720" height="709" loading="lazy" style="display: block; width: 100%; height: auto">
 </div>
 </figure>
+
+</div>
+
+<div class="sv" style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px 40px; margin-top: 96px">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 760px">
+<p style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: .16em; color: var(--acInk)">CLAUDE + MY MCP SERVER</p>
+<h3 style="margin: 0; font-size: clamp(28px, 3.4vw, 44px); font-weight: 800; line-height: 1.08; letter-spacing: -.025em; text-wrap: balance">Ask the business a question. Get the report.</h3>
+<p style="margin: 0; font-size: 18px; color: var(--muted)">I set up an MCP server that connects Claude to our internal sheets: generator service, inventory, collections and vehicles. These are real questions and real tool calls from 11 Oct 2026, replayed. Client names and amounts are hidden.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<span style="border: 1px solid var(--line); border-radius: 999px; padding: 6px 13px; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: .06em; color: var(--muted)">62 TOOLS</span>
+<span style="border: 1px solid var(--line); border-radius: 999px; padding: 6px 13px; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: .06em; color: var(--muted)">READ REPORTS + WRITE ENTRIES</span>
+</div>
+</div>
+
+<div class="sv" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(460px, 100%), 1fr)); gap: 20px; margin-top: 36px">
+
+<article aria-label="Replay: inventory question" style="--dur: 12s; --off: 0s; display: flex; flex-direction: column; gap: 14px; box-sizing: border-box; min-height: 380px; border: 1px solid var(--line); border-radius: 24px; background: var(--surface); padding: 24px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: .1em"><span style="color: var(--acInk)">INVENTORY</span><span style="color: var(--muted)">REPLAY</span></div>
+<div class="q1" style="align-self: flex-end; max-width: 85%; background: var(--surface2); border-radius: 18px 18px 4px 18px; padding: 10px 15px; font-size: 16px; line-height: 1.45">Kaunse parts minimum stock se kam hain?</div>
+<div class="q2" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; max-width: 100%; box-sizing: border-box; border: 1px dashed var(--line); border-radius: 10px; padding: 7px 12px; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; color: var(--muted)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"></path></svg><span>Tally_IMS_Other › <span style="color: var(--ink)">get_ims_dashboard</span></span></div>
+<div class="q3" style="align-self: flex-start; max-width: 92%; background: var(--acSoft); border-radius: 18px 18px 18px 4px; padding: 12px 15px; font-size: 16px; line-height: 1.5">45 parts checked. <strong>13 need attention</strong>: 7 are out of stock and 6 are below minimum. The biggest gaps:</div>
+<div class="q4" style="display: flex; flex-direction: column; gap: 6px; font-size: 14px">
+<div style="display: flex; justify-content: space-between; gap: 12px; border-radius: 10px; background: var(--surface2); padding: 8px 12px"><span>7.5 KVA W/C copper genset</span><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; color: var(--warn); white-space: nowrap">1 left · min 4</span></div>
+<div style="display: flex; justify-content: space-between; gap: 12px; border-radius: 10px; background: var(--surface2); padding: 8px 12px"><span>7.5 KVA A/C copper genset</span><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; color: var(--warn); white-space: nowrap">2 left · min 4</span></div>
+<div style="display: flex; justify-content: space-between; gap: 12px; border-radius: 10px; background: var(--surface2); padding: 8px 12px"><span>7.5 KVA A/C mix genset</span><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; color: var(--warn); white-space: nowrap">2 left · min 3</span></div>
+</div>
+</article>
+
+<article aria-label="Replay: generator service question" style="--dur: 12s; --off: -3s; display: flex; flex-direction: column; gap: 14px; box-sizing: border-box; min-height: 380px; border: 1px solid var(--line); border-radius: 24px; background: var(--surface); padding: 24px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: .1em"><span style="color: var(--acInk)">GENERATOR SERVICE</span><span style="color: var(--muted)">REPLAY</span></div>
+<div class="q1" style="align-self: flex-end; max-width: 85%; background: var(--surface2); border-radius: 18px 18px 4px 18px; padding: 10px 15px; font-size: 16px; line-height: 1.45">Agle 15 din me kaunse DG service due hain?</div>
+<div class="q2" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; max-width: 100%; box-sizing: border-box; border: 1px dashed var(--line); border-radius: 10px; padding: 7px 12px; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; color: var(--muted)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"></path></svg><span>Tally_IMS_Other › <span style="color: var(--ink)">get_dg_dashboard</span></span></div>
+<div class="q3" style="align-self: flex-start; max-width: 92%; background: var(--acSoft); border-radius: 18px 18px 18px 4px; padding: 12px 15px; font-size: 16px; line-height: 1.5">177 generators checked across 174 sites. <strong>62 come due in the next 15 days</strong>, and 23 of them are due very soon.</div>
+<div class="q4" style="display: flex; flex-direction: column; gap: 8px">
+<div style="display: flex; height: 14px; border-radius: 7px; overflow: hidden; gap: 2px">
+<span style="display: block; flex: 23; background: var(--warn)"></span>
+<span style="display: block; flex: 13; background: var(--ac2)"></span>
+<span style="display: block; flex: 26; background: var(--line)"></span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 13px; color: var(--muted)">
+<span style="display: flex; align-items: center; gap: 6px"><span style="width: 8px; height: 8px; border-radius: 2px; background: var(--warn); display: block"></span>Due soon · 23</span>
+<span style="display: flex; align-items: center; gap: 6px"><span style="width: 8px; height: 8px; border-radius: 2px; background: var(--ac2); display: block"></span>Upcoming · 13</span>
+<span style="display: flex; align-items: center; gap: 6px"><span style="width: 8px; height: 8px; border-radius: 2px; background: var(--line); display: block"></span>Later in the window · 26</span>
+</div>
+</div>
+</article>
+
+<article aria-label="Replay: collections question" style="--dur: 12s; --off: -6s; display: flex; flex-direction: column; gap: 14px; box-sizing: border-box; min-height: 380px; border: 1px solid var(--line); border-radius: 24px; background: var(--surface); padding: 24px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: .1em"><span style="color: var(--acInk)">COLLECTIONS</span><span style="color: var(--muted)">REPLAY</span></div>
+<div class="q1" style="align-self: flex-end; max-width: 85%; background: var(--surface2); border-radius: 18px 18px 4px 18px; padding: 10px 15px; font-size: 16px; line-height: 1.45">Pichle 6 hafte ka collection compare karo.</div>
+<div class="q2" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; max-width: 100%; box-sizing: border-box; border: 1px dashed var(--line); border-radius: 10px; padding: 7px 12px; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; color: var(--muted)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"></path></svg><span>Tally_IMS_Other › <span style="color: var(--ink)">get_collections_comparison</span></span></div>
+<div class="q3" style="align-self: flex-start; max-width: 92%; background: var(--acSoft); border-radius: 18px 18px 18px 4px; padding: 12px 15px; font-size: 16px; line-height: 1.5">Week-by-week table ready for every paying client, across Sites and Farms. <strong>Peak week: 21–27 Sep.</strong></div>
+<div class="q4" style="display: flex; flex-direction: column; gap: 6px">
+<div style="display: flex; align-items: flex-end; gap: 10px; height: 84px">
+<span style="display: block; flex: 1; height: 48%; border-radius: 5px 5px 2px 2px; background: var(--ac2)"></span>
+<span style="display: block; flex: 1; height: 71%; border-radius: 5px 5px 2px 2px; background: var(--ac2)"></span>
+<span style="display: block; flex: 1; height: 54%; border-radius: 5px 5px 2px 2px; background: var(--ac2)"></span>
+<span style="display: block; flex: 1; height: 100%; border-radius: 5px 5px 2px 2px; background: var(--ac)"></span>
+<span style="display: block; flex: 1; height: 49%; border-radius: 5px 5px 2px 2px; background: var(--ac2)"></span>
+<span style="display: block; flex: 1; height: 39%; border-radius: 5px 5px 2px 2px; background: var(--ac2)"></span>
+</div>
+<div style="display: flex; gap: 10px; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; color: var(--muted)">
+<span style="flex: 1; text-align: center">31 AUG</span><span style="flex: 1; text-align: center">7 SEP</span><span style="flex: 1; text-align: center">14 SEP</span><span style="flex: 1; text-align: center">21 SEP</span><span style="flex: 1; text-align: center">28 SEP</span><span style="flex: 1; text-align: center">5 OCT</span>
+</div>
+<p style="margin: 0; font-size: 12px; color: var(--muted)">Week totals shown to scale. Amounts hidden.</p>
+</div>
+</article>
+
+<article aria-label="Replay: vehicle mileage question" style="--dur: 12s; --off: -9s; display: flex; flex-direction: column; gap: 14px; box-sizing: border-box; min-height: 380px; border: 1px solid var(--line); border-radius: 24px; background: var(--surface); padding: 24px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: .1em"><span style="color: var(--acInk)">VEHICLES</span><span style="color: var(--muted)">REPLAY</span></div>
+<div class="q1" style="align-self: flex-end; max-width: 85%; background: var(--surface2); border-radius: 18px 18px 4px 18px; padding: 10px 15px; font-size: 16px; line-height: 1.45">CNG gaadiyon ka mileage check karo. Kuch gadbad hai?</div>
+<div class="q2" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; max-width: 100%; box-sizing: border-box; border: 1px dashed var(--line); border-radius: 10px; padding: 7px 12px; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; color: var(--muted)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"></path></svg><span>Tally_IMS_Other › <span style="color: var(--ink)">get_petrol_cng_data</span></span></div>
+<div class="q3" style="align-self: flex-start; max-width: 92%; background: var(--acSoft); border-radius: 18px 18px 18px 4px; padding: 12px 15px; font-size: 16px; line-height: 1.5">3 vehicles checked. <strong>Vehicle C shows 375 km/kg in September.</strong> Its odometer jumped from 2,110 to 16,840 km, so this is most likely a reading entry mistake, not real mileage.</div>
+<div class="q4" style="display: flex; flex-wrap: wrap; gap: 8px; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px">
+<span style="border-radius: 10px; background: var(--surface2); padding: 7px 12px">A · 29.9 km/kg</span>
+<span style="border-radius: 10px; background: var(--surface2); padding: 7px 12px">B · 24.5 km/kg</span>
+<span style="border-radius: 10px; background: var(--surface2); padding: 7px 12px; color: var(--warn)">C · 375.7 km/kg · check</span>
+</div>
+</article>
 
 </div>
 </section>
